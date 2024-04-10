@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="rosa1">#FFE2F3</color>
+    <color name="rosa2">#EBA3CD</color>
+    <color name="rosa3">#F0B9D9</color>
+    <color name="rosa4">#CF8BB4</color>
+    <color name="rosa5">#FFCEEB</color>
+    <color name="rosa6">#DF86BA</color>
+    <color name="rosa7">#FFCEEB</color>
+    <color name="rosa8">#FFF0F9</color>
+    <color name="rosa9">#BF3184</color>
+    <color name="rosa10">#DC93BE</color>
+    <color name="cinza11">#7F7E7E</color>
+    <color name="rosa12">#FFCEEB</color>
+    <color name="rosa13">#FFE2F3</color>
+    <color name="rosa14">#FFCEEB</color>
+    <color name="rosa15">#FFF0F9</color>
+    <color name="white">#ffffff</color>
+</resources>
