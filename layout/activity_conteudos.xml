@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:context=".conteudos">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="440dp"
+            android:layout_height="80dp"
+            android:background="@color/rosa5"
+            android:backgroundTint="@color/rosa5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <SearchView
+            android:id="@+id/color"
+            android:layout_width="312dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="16dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view"
+            app:layout_constraintVertical_bias="0.484" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_es"
+            android:layout_width="333dp"
+            android:layout_height="106dp"
+            android:layout_marginTop="132dp"
+            android:background="@drawable/background_button"
+            android:drawableLeft="@drawable/venus_mars_1"
+            android:drawablePadding="2dp"
+            android:fontFamily="@font/belleza"
+            android:paddingLeft="40dp"
+            android:text="Educação Sexual"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_mes"
+            android:layout_width="333dp"
+            android:layout_height="106dp"
+            android:layout_marginTop="268dp"
+            android:background="@drawable/background_button"
+            android:drawableLeft="@drawable/calendar_1"
+            android:drawablePadding="-30dp"
+            android:fontFamily="@font/belleza"
+            android:paddingLeft="40dp"
+            android:text="Menstruação"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_gra"
+            android:layout_width="333dp"
+            android:layout_height="106dp"
+            android:layout_marginTop="408dp"
+            android:background="@drawable/background_button"
+            android:drawableLeft="@drawable/mother_1"
+            android:drawablePadding="-70dp"
+            android:fontFamily="@font/belleza"
+            android:paddingLeft="30dp"
+            android:text="Gravidez"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_mc"
+            android:layout_width="333dp"
+            android:layout_height="106dp"
+            android:layout_marginTop="548dp"
+            android:background="@drawable/background_button"
+            android:drawableLeft="@drawable/contraceptive_pills_1"
+            android:drawablePadding="0dp"
+            android:fontFamily="@font/belleza"
+            android:paddingLeft="35dp"
+            android:text="Métodos Contraceptivos"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_sc"
+            android:layout_width="333dp"
+            android:layout_height="106dp"
+            android:layout_marginTop="684dp"
+            android:background="@drawable/background_button"
+            android:drawableLeft="@drawable/blood_1"
+            android:drawablePadding="0dp"
+            android:fontFamily="@font/belleza"
+            android:paddingLeft="30dp"
+            android:text="Secreções e Corrimentos"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_menu"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/background_button2"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_keyboard_arrow_down_24" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_eg"
+            android:layout_width="333dp"
+            android:layout_height="106dp"
+            android:layout_marginTop="824dp"
+            android:background="@drawable/background_button"
+            android:drawableLeft="@drawable/gynecologist_1"
+            android:drawablePadding="0dp"
+            android:fontFamily="@font/belleza"
+            android:paddingLeft="30dp"
+            android:text="Exames Ginecológicos"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_ss"
+            android:layout_width="333dp"
+            android:layout_height="106dp"
+            android:layout_marginTop="964dp"
+            android:background="@drawable/background_button"
+            android:drawableLeft="@drawable/couple_1"
+            android:drawablePadding="0dp"
+            android:fontFamily="@font/belleza"
+            android:paddingLeft="30dp"
+            android:text="Sexo Saudável"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_pu"
+            android:layout_width="333dp"
+            android:layout_height="106dp"
+            android:layout_marginTop="1104dp"
+            android:background="@drawable/background_button"
+            android:drawableLeft="@drawable/girl_1"
+            android:drawablePadding="0dp"
+            android:fontFamily="@font/belleza"
+            android:paddingLeft="30dp"
+            android:text="Puberdade"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_esc"
+            android:layout_width="333dp"
+            android:layout_height="106dp"
+            android:layout_marginTop="1244dp"
+            android:background="@drawable/background_button"
+            android:drawableLeft="@drawable/hip_1"
+            android:drawablePadding="0dp"
+            android:fontFamily="@font/belleza"
+            android:paddingLeft="30dp"
+            android:text="Entenda Seu Corpo"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
