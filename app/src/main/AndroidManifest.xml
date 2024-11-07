@@ -12,9 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lady_iza_fragments"
         tools:targetApi="31">
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
 
         <activity
             android:name=".Opcoes_Locais"
