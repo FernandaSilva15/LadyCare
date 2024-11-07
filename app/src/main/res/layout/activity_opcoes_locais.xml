@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Opcoes_Locais">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/constraintopcoes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    <View
+        android:id="@+id/view"
+        android:layout_width="415dp"
+        android:layout_height="65dp"
+        android:background="@color/rosa_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imagem_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="328dp"
+        android:src="@drawable/logo_lady"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="102dp"
+            android:layout_height="39dp"
+            android:fontFamily="@font/bentham"
+            android:text="LadyCare"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.275"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.961" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/belleza"
+            android:text="Locais de Atendimento"
+            android:textColor="@color/rosa_texto"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.139"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="27dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.041"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            app:srcCompat="?attr/actionModeCloseDrawable" />
+
+
+
+    <!--maternidades-->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="330dp"
+        android:layout_height="58dp"
+        android:backgroundTint="#FFF0F9"
+        android:clickable="true"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="172dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#EFACD4"
+        app:strokeWidth="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:id="@+id/constraint"
+            android:layout_width="330dp"
+            android:layout_height="58dp">
+
+            <ImageView
+                android:layout_width="62dp"
+                android:layout_height="57dp"
+                android:src="@drawable/icone_hospital"
+                app:layout_constraintBottom_toBottomOf="@+id/constraint"
+                app:layout_constraintEnd_toEndOf="@+id/constraint"
+                app:layout_constraintHorizontal_bias="0.059"
+                app:layout_constraintStart_toStartOf="@+id/constraint"
+                app:layout_constraintTop_toTopOf="@+id/constraint"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="264dp"
+                android:layout_height="53dp"
+                android:fontFamily="@font/belleza"
+                android:text="Maternidades e Hospitais Públicos"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:onClick="ir_endereco"
+                app:layout_constraintBottom_toBottomOf="@+id/constraint"
+                app:layout_constraintEnd_toEndOf="@+id/constraint"
+                app:layout_constraintHorizontal_bias="0.909"
+                app:layout_constraintStart_toStartOf="@+id/constraint"
+                app:layout_constraintTop_toTopOf="@+id/constraint"
+                app:layout_constraintVertical_bias="0.6" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <!--ubs-->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card2"
+        android:layout_width="330dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="250dp"
+        android:clickable="true"
+        android:onClick="ubs"
+        app:cardCornerRadius="15dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="#EFACD4"
+        android:backgroundTint="#FFF0F9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint2"
+            android:layout_width="330dp"
+            android:layout_height="58dp">
+
+            <ImageView
+                android:layout_width="62dp"
+                android:layout_height="57dp"
+                android:src="@drawable/icone_ubs"
+                app:layout_constraintBottom_toBottomOf="@+id/constraint2"
+                app:layout_constraintEnd_toEndOf="@+id/constraint2"
+                app:layout_constraintHorizontal_bias="0.059"
+                app:layout_constraintStart_toStartOf="@+id/constraint2"
+                app:layout_constraintTop_toTopOf="@+id/constraint2"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="264dp"
+                android:layout_height="53dp"
+                android:fontFamily="@font/belleza"
+                android:text="Unidades Básicas de Sáude (UBS)"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:onClick="ir_endereco"
+
+                app:layout_constraintBottom_toBottomOf="@+id/constraint2"
+                app:layout_constraintEnd_toEndOf="@+id/constraint2"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/constraint2"
+                app:layout_constraintTop_toTopOf="@+id/constraint2"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!--clinicas-->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card3"
+        android:layout_width="330dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="328dp"
+        android:clickable="true"
+        android:onClick="clinicas"
+        app:cardCornerRadius="15dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="#EFACD4"
+        android:backgroundTint="#FFF0F9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint3"
+            android:layout_width="330dp"
+            android:layout_height="58dp">
+
+            <ImageView
+                android:layout_width="62dp"
+                android:layout_height="57dp"
+                android:src="@drawable/icone_clinica"
+                app:layout_constraintBottom_toBottomOf="@+id/constraint3"
+                app:layout_constraintEnd_toEndOf="@+id/constraint3"
+                app:layout_constraintHorizontal_bias="0.059"
+                app:layout_constraintStart_toStartOf="@+id/constraint3"
+                app:layout_constraintTop_toTopOf="@+id/constraint3"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="225dp"
+                android:layout_height="51dp"
+                android:fontFamily="@font/belleza"
+                android:text="     Clínicas e Consultórios Privados"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:onClick="ir_endereco"
+                app:layout_constraintBottom_toBottomOf="@+id/constraint3"
+                app:layout_constraintEnd_toEndOf="@+id/constraint3"
+                app:layout_constraintHorizontal_bias="0.733"
+                app:layout_constraintStart_toStartOf="@+id/constraint3"
+                app:layout_constraintTop_toTopOf="@+id/constraint3"
+                app:layout_constraintVertical_bias="0.571" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Container para o Fragment-->
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="405dp"
+            android:layout_height="1475dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" /><!-- Começa oculto -->
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
